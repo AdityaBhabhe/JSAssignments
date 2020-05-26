@@ -1,4 +1,7 @@
-// prime numbers
+// **********************prime numbers***********************
+
+
+
 // function findPrime(number){
 //     if(number != 2){
 //         for(let i = 2; i<number; i++){
@@ -19,7 +22,7 @@
 
 
 
-// Prime factors
+// ********************Prime factors************************
 
 // function primeFactors(number){
 //     const factors = []
@@ -47,6 +50,9 @@
 
 // console.log(primeFactors(21))
 
+
+// *********************fibonacci*************************
+
 // function fibonacci (number) {
 //     const fin = [0,1]
 //     sum = 0
@@ -67,7 +73,7 @@
 // console.log(fibonacci(12))
 
 
-//GCD
+//************************GCD******************************
 
 // function divisor(a,b){
 //    if(a>b){
@@ -92,19 +98,62 @@
 // console.log(divisor(21,14))
 
 
-function removeDuplicate(arr){
-    const filteredArray = []
-    for(let i=0; i < arr.length ; i++){
-        for(let j = i+1 ; j < arr.length ; j++){
-            if(arr[i] == arr[j]){
-                delete arr[i]
-            }
-        }
-    }
-    return filteredArray
-}
 
-console.log(removeDuplicate([1,3,3,3,1,5,6,8,1]))
+// ********************remove duplicate*************************
 
-    
+// function removeDuplicate(arr){
+//     const filteredArray = []
+//     for(let i = 0 ; i < arr.length ; i++){
+//         if(!filteredArray.includes(arr[i])){
+//             filteredArray.push(arr[i])
+//         }
+//     }
+//     return filteredArray
+// }
+
+// console.log(removeDuplicate([1,3,3,3,1,5,6,8,1]))
+
+// **************merge sorted array************************
+
+// function sortedArray(arr1,arr2){
+//     let newarray = [...arr1,...arr2]
+//     newarray.sort((a,b) => a > b)
+//     return newarray
+// }
+
+// console.log(sortedArray([2,5,6,9], [1,2,3,29]))
+
+// *****************substring************************
+
+// function substringFinder(str, str1){
+
+
+// }
+
+// substringFinder('abbcdabbbbbck', 'ab')
+
+
+
+// *************************sum of two *********************************
+
+
+
+// function sumFinder(arr,number){
+//     arr1 = arr.some(element => arr.includes((number - element)));
+//     return arr1
+// }
+
+// console.log(sumFinder([6,4,3,2,1,7], 9))
+
+
+//**************** missing number **************
+
+// function missingNumber(arr1){
+//    let newarr =  arr1.filter((ele,index) => (ele-1)!=index)
+//     return (newarr[0] - 1) 
+// }
+
+// console.log(missingNumber([1,2,3,4,5,6,7,8,10]))
+
+
 
